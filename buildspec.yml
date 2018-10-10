@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file GetFromS3.yaml --kms-key-id 24bbab5e-a4d7-4b42-8c7e-21cdb2c165b4 --s3-bucket GetFromS3Lambda 
+      - aws cloudformation package --template-file GetFromS3.yaml --kms-key-id 24bbab5e-a4d7-4b42-8c7e-21cdb2c165b4 --s3-bucket getfroms3lambda 
                                    --output-template-file outputGetFromS3.yaml
 artifacts:
   type: zip
